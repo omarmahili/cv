@@ -1,5 +1,5 @@
 import React from "react";
-import Headline from "./Headline";
+import Subhead from "./Subhead";
 import Tag from "./Tag";
 
 interface SkillsProps {
@@ -8,7 +8,7 @@ interface SkillsProps {
 
 const Skills: React.FunctionComponent<SkillsProps> = ({ skills }) => (
   <div className="flex flex-col mt-8">
-    <Headline>Skills</Headline>
+    <Subhead>Skills</Subhead>
     <div className="flex flex-wrap -ml-1 mt-2">
       {skills.map((x) => (
         <Tag>{x}</Tag>

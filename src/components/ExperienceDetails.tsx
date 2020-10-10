@@ -1,11 +1,11 @@
 import React from "react";
 import ExperienceModel from "../models/experience";
 
-interface ExperienceProps {
+interface ExperienceDetailsProps {
   experience: ExperienceModel;
 }
 
-const Experience: React.FunctionComponent<ExperienceProps> = ({
+const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
   experience,
 }) => {
   const companyOrInstitute = experience.companyOrInstitute ? (
@@ -39,4 +39,4 @@ const Experience: React.FunctionComponent<ExperienceProps> = ({
   );
 };
 
-export default Experience;
+export default ExperienceDetails;

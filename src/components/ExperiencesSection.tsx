@@ -1,14 +1,14 @@
 import React from "react";
 import Title from "./Title";
 import ExperienceModel from "../models/experience";
-import Experience from "./Experience";
+import ExperienceDetails from "./ExperienceDetails";
 
-interface SectionProps {
+interface ExperiencesSectionProps {
   title: string;
   experiences: ExperienceModel[];
 }
 
-const Section: React.FunctionComponent<SectionProps> = ({
+const ExperiencesSection: React.FunctionComponent<ExperiencesSectionProps> = ({
   title,
   experiences,
 }) => (
@@ -16,10 +16,10 @@ const Section: React.FunctionComponent<SectionProps> = ({
     <Title>{title}</Title>
     <ul className="my-1">
       {experiences.map((x) => (
-        <Experience experience={x} />
+        <ExperienceDetails experience={x} />
       ))}
     </ul>
   </div>
 );
 
-export default Section;
+export default ExperiencesSection;

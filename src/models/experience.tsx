@@ -1,8 +1,9 @@
 interface ExperienceModel {
-  from: Date;
-  to?: Date;
-  title: string;
-  description: string;
+  from: string;
+  to?: string;
+  profession?: string;
+  companyOrInstitute?: string;
+  description?: string;
 }
 
 export default ExperienceModel;

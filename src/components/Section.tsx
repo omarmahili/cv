@@ -14,9 +14,11 @@ const Section: React.FunctionComponent<SectionProps> = ({
 }) => (
   <div>
     <Title>{title}</Title>
-    {experiences.map((x) => (
-      <Experience experience={x} />
-    ))}
+    <ul className="my-1">
+      {experiences.map((x) => (
+        <Experience experience={x} />
+      ))}
+    </ul>
   </div>
 );
 

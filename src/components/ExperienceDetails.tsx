@@ -1,5 +1,7 @@
 import React from "react";
+import { ImLocation2 } from "react-icons/im";
 import { ExperienceDetailsData } from "../models/cv";
+import IconText from "./IconText";
 
 interface ExperienceDetailsProps {
   details: ExperienceDetailsData;
@@ -20,6 +22,10 @@ const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
     <p className="text-lg text-orange-600">{details.profession}</p>
   ) : null;
 
+  const location = details.location ? (
+    <IconText icon={<ImLocation2 />}>{details.location}</IconText>
+  ) : null;
+
   return (
     <li className="flex flex-row text-sm text-gray-800">
       <div className="h-6 flex justify-center items-center">
@@ -31,7 +37,12 @@ const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
         }`}</p>
         <div className="mt-2">
           {profession}
-          {companyOrInstitute}
+          <div className="flex flex-row justify-between text-gray-600">
+            {companyOrInstitute}
+            <div className="text-sm">
+              {location}
+            </div>
+          </div>
           {description}
         </div>
       </div>

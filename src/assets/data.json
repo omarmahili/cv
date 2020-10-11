@@ -7,6 +7,7 @@
           "from": "May 2015",
           "profession": "Web Developer",
           "companyOrInstitute": "Search Engine LLC",
+          "location": "Silicon Valley, US",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et gravida nunc, quis condimentum mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
@@ -14,6 +15,7 @@
           "to": "April 2015",
           "profession": "Mobile Developer",
           "companyOrInstitute": "Social Network LLC",
+          "location": "New York, US",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et gravida nunc, quis condimentum mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         }
       ]

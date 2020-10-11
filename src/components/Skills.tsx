@@ -9,9 +9,9 @@ interface SkillsProps {
 const Skills: React.FunctionComponent<SkillsProps> = ({ skills }) => (
   <div className="flex flex-col mt-8">
     <Subhead>Skills</Subhead>
-    <div className="flex flex-wrap -ml-1 mt-2">
-      {skills.map((x) => (
-        <Tag>{x}</Tag>
+    <div className="flex flex-wrap -ml-1">
+      {skills.map((x, i) => (
+        <Tag key={i}>{x}</Tag>
       ))}
     </div>
   </div>

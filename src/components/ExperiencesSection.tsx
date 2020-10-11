@@ -1,22 +1,22 @@
 import React from "react";
 import Title from "./Title";
-import ExperienceModel from "../models/experience";
+import { ExperienceDetailsData } from "../models/cv";
 import ExperienceDetails from "./ExperienceDetails";
 
 interface ExperiencesSectionProps {
   title: string;
-  experiences: ExperienceModel[];
+  list: ExperienceDetailsData[];
 }
 
 const ExperiencesSection: React.FunctionComponent<ExperiencesSectionProps> = ({
   title,
-  experiences,
+  list,
 }) => (
   <div>
     <Title>{title}</Title>
     <ul className="my-1">
-      {experiences.map((x, i) => (
-        <ExperienceDetails key={i} experience={x} />
+      {list.map((x, i) => (
+        <ExperienceDetails key={i} details={x} />
       ))}
     </ul>
   </div>

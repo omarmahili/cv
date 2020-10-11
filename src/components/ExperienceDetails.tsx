@@ -1,23 +1,23 @@
 import React from "react";
-import ExperienceModel from "../models/experience";
+import { ExperienceDetailsData } from "../models/cv";
 
 interface ExperienceDetailsProps {
-  experience: ExperienceModel;
+  details: ExperienceDetailsData;
 }
 
 const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
-  experience,
+  details,
 }) => {
-  const companyOrInstitute = experience.companyOrInstitute ? (
-    <p className="text-base text-gray-800">{`at ${experience.companyOrInstitute}`}</p>
+  const companyOrInstitute = details.companyOrInstitute ? (
+    <p className="text-base text-gray-800">{`at ${details.companyOrInstitute}`}</p>
   ) : null;
 
-  const description = experience.description ? (
-    <p className="text-sm my-2">{experience.description}</p>
+  const description = details.description ? (
+    <p className="text-sm my-2">{details.description}</p>
   ) : null;
 
-  const profession = experience.profession ? (
-    <p className="text-lg text-orange-600">{experience.profession}</p>
+  const profession = details.profession ? (
+    <p className="text-lg text-orange-600">{details.profession}</p>
   ) : null;
 
   return (
@@ -26,8 +26,8 @@ const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
         <div className="w-2 h-2 border-2 border-blue-600 rounded-full"></div>
       </div>
       <div className="flex flex-col ml-4">
-        <p className="h-6 flex items-center">{`${experience.from} - ${
-          experience.to || "Current"
+        <p className="h-6 flex items-center">{`${details.from} - ${
+          details.to || "Current"
         }`}</p>
         <div className="mt-2">
           {profession}

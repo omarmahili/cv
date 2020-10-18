@@ -1,7 +1,7 @@
 export interface ExperienceDetailsData {
   from: string;
   to?: string;
-  profession?: string;
+  professionOrDegree?: string;
   companyOrInstitute?: string;
   location?: string;
   description?: string;

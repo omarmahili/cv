@@ -10,6 +10,9 @@ interface ExperienceDetailsProps {
 const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
   details,
 }) => {
+  const to =  details.to || "Current";
+  const period = details.from !== details.to ? `${details.from} - ${to}` : details.from;
+
   const companyOrInstitute = details.companyOrInstitute ? (
     <p className="text-base text-gray-800">{`at ${details.companyOrInstitute}`}</p>
   ) : null;
@@ -18,8 +21,8 @@ const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
     <p className="text-sm my-2">{details.description}</p>
   ) : null;
 
-  const profession = details.profession ? (
-    <p className="text-lg text-orange-600">{details.profession}</p>
+  const professionOrDegree = details.professionOrDegree ? (
+    <p className="text-lg text-orange-600">{details.professionOrDegree}</p>
   ) : null;
 
   const location = details.location ? (
@@ -31,12 +34,10 @@ const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
       <div className="h-6 flex justify-center items-center">
         <div className="w-2 h-2 border-2 border-blue-600 rounded-full"></div>
       </div>
-      <div className="flex flex-col ml-4">
-        <p className="h-6 flex items-center">{`${details.from} - ${
-          details.to || "Current"
-        }`}</p>
+      <div className="flex flex-col flex-1 ml-4">
+        <p className="h-6 flex items-center">{period}</p>
         <div className="mt-2">
-          {profession}
+          {professionOrDegree}
           <div className="flex flex-row justify-between text-gray-600">
             {companyOrInstitute}
             <div className="text-sm">

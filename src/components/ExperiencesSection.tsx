@@ -12,9 +12,9 @@ const ExperiencesSection: React.FunctionComponent<ExperiencesSectionProps> = ({
   title,
   list,
 }) => (
-  <div>
+  <div className="mb-2">
     <Title>{title}</Title>
-    <ul className="my-1">
+    <ul className="mb-1">
       {list.map((x, i) => (
         <ExperienceDetails key={i} details={x} />
       ))}

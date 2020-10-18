@@ -5,7 +5,7 @@ interface TagProps {
 }
 
 const Tag: React.FunctionComponent<TagProps> = ({ children }) => (
-  <div className="bg-blue-400 px-2 py-1 shadow mx-1 my-1">
+  <div className="bg-blue-400 px-2 py-1 shadow mr-2 mb-2">
     <p className="text-white text-xs">{children}</p>
   </div>
 );

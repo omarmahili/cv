@@ -11,7 +11,7 @@ interface InfoProps {
 const Info: React.FunctionComponent<InfoProps> = ({
   info
 }) => (
-  <div className="mt-8">
+  <div className="mb-8">
     <Subhead>Info</Subhead>
     <div className="text-sm text-gray-600">
       <IconText icon={<ImMail2 />}>{info.email}</IconText>

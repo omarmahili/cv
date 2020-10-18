@@ -11,15 +11,15 @@ interface StackOverflowProps {
 const StackOverflow: React.FunctionComponent<StackOverflowProps> = ({
   stackoverflow,
 }) => (
-  <div className="mt-8">
+  <div className="mb-8">
     <Subhead>StackOverflow</Subhead>
     <div className="text-gray-600">
-      <p className="text-xs italic">Active from {stackoverflow.from}</p>
+      <p className="text-xs italic mb-1">Active from {stackoverflow.from}</p>
       <IconText icon={<ImStackoverflow />}>
         {`${stackoverflow.reputation} Reputation`}
       </IconText>
-      <p>{stackoverflow.answers} answers</p>
-      <p>
+      <p className="mb-1">{stackoverflow.answers} answers</p>
+      <p className="mb-1">
         {stackoverflow.peopleReached} people reached
       </p>
     </div>

@@ -18,7 +18,7 @@ const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
   ) : null;
 
   const description = details.description ? (
-    <p className="text-sm my-2">{details.description}</p>
+    <p className="text-sm mb-2">{details.description}</p>
   ) : null;
 
   const professionOrDegree = details.professionOrDegree ? (
@@ -35,10 +35,10 @@ const ExperienceDetails: React.FunctionComponent<ExperienceDetailsProps> = ({
         <div className="w-2 h-2 border-2 border-blue-600 rounded-full"></div>
       </div>
       <div className="flex flex-col flex-1 ml-4">
-        <p className="h-6 flex items-center">{period}</p>
-        <div className="mt-2">
+        <p className="h-6 flex items-center mb-2">{period}</p>
+        <div>
           {professionOrDegree}
-          <div className="flex flex-row justify-between text-gray-600">
+          <div className="flex flex-row justify-between text-gray-600 mb-2">
             {companyOrInstitute}
             <div className="text-sm">
               {location}

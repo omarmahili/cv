@@ -9,7 +9,7 @@ const IconText: React.FunctionComponent<IconTextProps> = ({
   icon,
   children,
 }) => (
-  <div className="flex flex-row items-center">
+  <div className="flex flex-row items-center mb-1">
     <div className="mr-2">{icon}</div>
     {children}
   </div>

@@ -5,15 +5,15 @@
       "list": [
         {
           "from": "May 2015",
-          "profession": "Web Developer",
+          "professionOrDegree": "Web Developer",
           "companyOrInstitute": "Search Engine LLC",
           "location": "Silicon Valley, US",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et gravida nunc, quis condimentum mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
-          "from": "August 2010",
+          "from": "December 2010",
           "to": "April 2015",
-          "profession": "Mobile Developer",
+          "professionOrDegree": "Mobile Developer",
           "companyOrInstitute": "Social Network LLC",
           "location": "New York, US",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et gravida nunc, quis condimentum mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
@@ -22,15 +22,37 @@
     },
     {
       "title": "Freelance experiences",
-      "list": []
-    },
-    {
-      "title": "Projects",
-      "list": []
+      "list": [
+        {
+          "from": "January 2018",
+          "to": "January 2018",
+          "professionOrDegree": "Mobile Developer",
+          "companyOrInstitute": "Ecommerce Inc.",
+          "location": "US",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et gravida nunc, quis condimentum mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "from": "July 2017",
+          "to": "July 2017",
+          "professionOrDegree": "Web Developer",
+          "companyOrInstitute": "Blog Inc.",
+          "location": "US",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et gravida nunc, quis condimentum mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        }
+      ]
     },
     {
       "title": "Education",
-      "list": []
+      "list": [
+        {
+          "from": "September 2006",
+          "to": "October 2010",
+          "professionOrDegree": "Computer Science",
+          "companyOrInstitute": "University of New York",
+          "location": "New York, US",
+          "description": "Bachelor's degree"
+        }
+      ]
     }
   ],
   "profile": {

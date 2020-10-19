@@ -22,6 +22,7 @@ export interface StackOverflowData {
 }
 
 export interface ProfileData {
+  imageBase64?: string;
   fullname: string;
   expertise: string;
   description: string;

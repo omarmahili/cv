@@ -56,6 +56,7 @@
     }
   ],
   "profile": {
+    "imageBase64": null,
     "fullname": "Matt Johansson",
     "expertise": "Senior Developer",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."

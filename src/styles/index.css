@@ -17,7 +17,7 @@ body {
 }
 
 #root {
-  @apply flex flex-1 align-middle justify-center bg-gray-200 py-10;
+  @apply flex flex-1 align-middle justify-center bg-gray-200 py-10 min-h-screen;
 }
 
 .a4 {

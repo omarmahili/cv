@@ -23,8 +23,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "npx tailwindcss build src/styles/index.css -o src/styles/main.css",
     "build": "react-scripts build",
-    "build:css": "npx tailwindcss build src/styles/index.css -o src/styles/main.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

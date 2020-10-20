@@ -7,7 +7,7 @@ interface ProfileProps {
 }
 
 const Profile: React.FunctionComponent<ProfileProps> = ({ profile }) => (
-  <div className="flex flex-col items-center mb-16">
+  <div className="flex flex-col items-center mb-8">
     <div className=" flex items-center justify-center w-40 h-40 rounded-full bg-gray-300 mb-6 overflow-hidden">
       {profile.imageBase64 ? (
         <img

@@ -37,7 +37,7 @@ const App: React.FunctionComponent = () => {
 
       <div className="text-sm text-gray-500 text-center mt-4">
         <p>Copyright © 2020 - Omar Mahili</p>
-        <p>MIT License</p>
+        <p><a className="underline hover:text-gray-700" href="https://github.com/omarmahili/cv">Source code</a> - MIT License</p>
       </div>
     </div>
   );

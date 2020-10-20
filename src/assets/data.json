@@ -67,6 +67,10 @@
     "githubNickname": "mattjohansson",
     "phoneNumber": "+12 123456789"
   },
+  "languages": [
+    "English",
+    "Spanish"
+  ],
   "skills": [
     "lorem",
     "ipsum",

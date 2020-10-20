@@ -5,8 +5,9 @@ import Profile from "./components/Profile";
 import ExperiencesSection from "./components/ExperiencesSection";
 import Skills from "./components/Skills";
 import StackOverflow from "./components/StackOverflow";
-import CVData from "./models/cv";
+import Languages from "./components/Languages";
 import DownloadLink from "./components/DownloadLink";
+import CVData from "./models/cv";
 
 const staticData = require("./assets/data.json") as CVData;
 
@@ -27,6 +28,7 @@ const App: React.FunctionComponent = () => {
           <div className="flex flex-col w-4/12 bg-blue-100 p-10">
             <Profile profile={staticData.profile} />
             <Info info={staticData.info} />
+            <Languages languages={staticData.languages} />
             <Skills skills={staticData.skills} />
             <StackOverflow stackoverflow={staticData.stackoverflow} />
           </div>

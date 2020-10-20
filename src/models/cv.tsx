@@ -36,6 +36,7 @@ interface CVData {
   skills: string[];
   profile: ProfileData;
   info: InfoData;
+  languages: string[];
   stackoverflow: StackOverflowData;
 }
 

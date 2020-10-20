@@ -22,8 +22,10 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
+    "prestart": "npm run build:css",
     "start": "react-scripts start",
-    "prebuild": "npx tailwindcss build src/styles/index.css -o src/styles/main.css",
+    "build:css": "npx tailwindcss build src/styles/index.css -o src/styles/main.css",
+    "prebuild": "npm run build:css",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

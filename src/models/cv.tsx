@@ -8,6 +8,7 @@ export interface ExperienceDetailsData {
 }
 
 export interface InfoData {
+  location: string;
   email: string;
   phoneNumber: string;
   githubNickname: string;

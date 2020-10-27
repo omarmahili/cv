@@ -62,6 +62,7 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   "info": {
+    "location": "Silicon Valley, US",
     "email": "m.johansson@dolor.sit",
     "birthDate": "01/01/1970",
     "githubNickname": "mattjohansson",

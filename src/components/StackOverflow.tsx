@@ -11,9 +11,9 @@ interface StackOverflowProps {
 const StackOverflow: React.FunctionComponent<StackOverflowProps> = ({
   stackoverflow,
 }) => (
-  <div className="mb-8">
+  <div className="mb-4">
     <Subhead>StackOverflow</Subhead>
-    <div className="text-gray-600">
+    <div className="text-sm text-gray-600">
       <p className="text-xs italic mb-1">Active from {stackoverflow.from}</p>
       <IconText icon={<ImStackoverflow />}>
         {`${stackoverflow.reputation} Reputation`}

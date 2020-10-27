@@ -8,10 +8,10 @@ interface LanguagesProps {
 const Languages: React.FunctionComponent<LanguagesProps> = ({
   languages,
 }) => (
-  <div className="mb-8">
+  <div className="mb-4">
     <Subhead>Languages</Subhead>
     {/* list-inside would be better, but it doesn't work when exporting the pdf */}
-    <ul className="text-gray-600 list-disc ml-4">
+    <ul className="text-sm text-gray-600 list-disc ml-4">
       {languages.map(x => <li>{x}</li>)}
     </ul>
   </div>
